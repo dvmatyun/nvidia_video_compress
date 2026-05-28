@@ -1,2 +1,3 @@
 # nvidia_video_compress
-Uses hevc_nvenc to compress videos
+
+A new Flutter project.

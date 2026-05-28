@@ -5,11 +5,15 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
+migrate_working_dir/
 
 # IntelliJ related
+*.iml
 *.ipr
 *.iws
 .idea/
@@ -23,14 +27,11 @@
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
-.flutter-plugins
 .flutter-plugins-dependencies
-.packages
 .pub-cache/
 .pub/
 /build/
-
-# Web related
+/coverage/
 
 # Symbolication related
 app.*.symbols
@@ -42,97 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-# SKSL shaders warm-up
-*.sksl.json
-
-# Logs
-/logs/
-/coverage/
-# AI runtime log — truncated each app session, read by Claude via Read tool.
-# See .claude/skills/ai-log.md
-dev_data/ai_log.txt
-
-# Pre-migration snapshot written by tools/character_property_migration/migrate.dart.
-# Step 9 commit (3b47f05f) is the canonical rollback point — see
-# docsai/character_property_migration.md §10.
-dev_data/animation_data.legacy_backup.bin
-
-# Flutter test compilation outputs in package directories.
-packages/*/build/
-
-# Database
-*.db
-*.hive
-*.lock
-
-# Keystore
-android/keystore.properties
-
-# Firebase
-/.firebase/
-database.rules.json
-
-# Codegen
-/lib/**/**.gr.dart
-/lib/**/*.g.dart
-/lib/**/*.freezed.dart
-.idea
-
-.codegpt
-
-# dotnet part:
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-#Folders
-obj/*
-obj/
-*/.vs/*
-#other
-bin/
-Logs/
-*.cache
-*.assets.cache
-
-.vs/*
-
-# FVM Version Cache
-.fvm/
-
-#other:
-*.sfk
-assets/audio/monsters/animal/*.sfk
-*.salive
-.claude
