@@ -1,3 +1,3 @@
 # nvidia_video_compress
 
-A new Flutter project.
+A Flutter project for Windows that uses hevc_nvenc to compress videos
